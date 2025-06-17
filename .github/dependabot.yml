@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: 'bundler'
+    directories:
+      - '**/*'
+    groups:
+      # Dependabot requires separate groups for version and security updates
+      # By default, dependabot only updates packages explicitly defined in Gemfile
+      bundler-nonbreaking-proximal-dependency-updates:
+        applies-to: version-updates
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+    schedule:
+      interval: 'weekly'
+    registries:
+      - github-packages
+
+
+registries:
+  github-packages:
+    type: "rubygems-server"
+    url: "rubygems.pkg.github.com"
+    username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
+    password: "${{ secrets.GIT_HUB_PACKAGES_TOKEN }}"
+    replaces-base: true
