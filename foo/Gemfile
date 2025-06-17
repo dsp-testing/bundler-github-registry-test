@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.pkg.github.com/dsp-testing'
+
+gem 'json', '2.11.0'

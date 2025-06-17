@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.pkg.github.com/dsp-testing/
+  specs:
+    json (2.11.0)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  json (= 2.11.0)
+
+BUNDLED WITH
+   2.5.11
