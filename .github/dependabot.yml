@@ -27,4 +27,4 @@ registries:
     username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
     password: "${{ secrets.GIT_HUB_PACKAGES_TOKEN }}"
     # token: "${{ secrets.GIT_HUB_PACKAGES_TOKEN }}"
-    replaces-base: true
+    # replaces-base: true
