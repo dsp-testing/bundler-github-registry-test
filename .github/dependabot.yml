@@ -2,7 +2,8 @@ version: 2
 updates:
   - package-ecosystem: 'bundler'
     directories:
-      - '**/*'
+      - '/'
+      - '/foo'
     groups:
       # Dependabot requires separate groups for version and security updates
       # By default, dependabot only updates packages explicitly defined in Gemfile
